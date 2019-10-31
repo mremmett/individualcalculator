@@ -22,6 +22,9 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.calculator.subtract(4, 2), 2)
         self.assertEqual(self.calculator.result, 2)
 
+    def test_multiply_method_calculator(self):
+        self.assertEqual(self.calculator.multiply(4, 4), 16)
+        self.assertEqual(self.calculator.result, 16)
 
 if __name__ == '__main__':
     unittest.main()
