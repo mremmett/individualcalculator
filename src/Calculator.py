@@ -12,12 +12,19 @@ def multiplication(a, b):
     c = a * b
     return c
 
+
 def division(a, b):
     c = a / b
     return c
 
+
 def square(a):
-    c = a*a
+    c = a * a
+    return c
+
+
+def squareroot(a):
+    c = a ** 0.5
     return c
 
 
@@ -45,4 +52,8 @@ class Calculator:
 
     def square(self, a):
         self.result = square(a)
+        return self.result
+
+    def squareroot(self, a):
+        self.result = squareroot(a)
         return self.result
