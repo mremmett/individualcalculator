@@ -12,9 +12,6 @@ class MyTestCase(unittest.TestCase):
         calculator = Calculator()
         self.assertIsInstance(calculator, Calculator)
 
-    def test_result_property_calculator(self):
-        self.assertEqual(self.calculator.result, 0)
-
     def test_add_method_calculator(self):
         test_data = CsvReader('src/UnitTestAddition.csv').data
         for row in test_data:
@@ -56,6 +53,10 @@ class MyTestCase(unittest.TestCase):
             result = float(row['Result'])
             self.assertAlmostEqual(self.calculator.squareroot(float(row['Value 1'])), result)
             self.assertAlmostEqual(self.calculator.result, result)
+
+    def test_result_property_calculator(self):
+        self.assertEqual(self.calculator.result, 0)
+
 
 if __name__ == '__main__':
     unittest.main()
