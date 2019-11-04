@@ -1,5 +1,8 @@
 # Individual Calculator
 
+### Description: 
+Create a calculator using Python that has automated unit tests.  The calculator is required to perform the following operations: addition, subtraction, multiplication, division, square, and square root.
+
 ### Requirements: 
 - [x] Correct usage of object and static methods and properties
 - [x] At least 7 unit tests
